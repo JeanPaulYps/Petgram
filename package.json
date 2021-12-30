@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "lint": "standard",
+    "lint": "semistandard",
     "test": "echo \"Error: no test specified\" && exit 1",
     "now-build": "npm run build"
   },
@@ -27,22 +27,25 @@
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
-    "standard": "^16.0.4",
+    "semistandard": "^16.0.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.1"
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3"
   },
-  "standard": {
+  "semistandard": {
     "ignore": [
       "/api/**"
     ]
   },
   "eslintConfig": {
-    "extends": ["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/semistandard/eslintrc.json"
+    ]
   }
- 
 }
