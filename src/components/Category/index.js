@@ -3,8 +3,8 @@ import { Anchor, Image } from './styles';
 
 const DEAFULT_IMAGE = 'https://i.imgur.com/dJa0Hpl.jpg';
 
-export const Category = ({ cover = DEAFULT_IMAGE, path, emoji = '?' }) => (
-  <Anchor href={path}>
+export const Category = ({ cover = DEAFULT_IMAGE, path = '#', emoji = '?' }) => (
+  <Anchor to={path}>
     <Image src={cover} />
     {emoji}
   </Anchor>
