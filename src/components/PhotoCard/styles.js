@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { fadeIn } from '../styles/animation';
+import { fadeIn } from '../../styles/animation';
+
+const Article = styled.article`
+    min-height: 200px;
+`;
 
 const ImgWrapper = styled.div`
     border-radius: 10px;
@@ -21,13 +25,4 @@ const Img = styled.img`
     width: 100%;
 }`;
 
-const Button = styled.button`
-    display: flex;
-    align-items: center;
-    padding-top: 8px;
-    & svg {
-        margin-right: 4px;
-    }
-`;
-
-export { ImgWrapper, Img, Button };
+export { ImgWrapper, Img, Article };
