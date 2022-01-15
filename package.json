@@ -8,7 +8,9 @@
     "dev": "webpack-dev-server --history-api-fallback",
     "lint": "semistandard",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "now-build": "npm run build"
+    "now-build": "npm run build",
+    "serve:dev": "webpack --mode development && npx serve dist -s",
+    "test": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -26,17 +28,21 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
+    "cypress": "^9.2.1",
     "html-webpack-plugin": "^5.5.0",
     "semistandard": "^16.0.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1"
+    "webpack-dev-server": "^4.7.1",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.4.2"
   },
   "dependencies": {
     "@apollo/client": "^3.5.6",
     "@reach/router": "^1.3.4",
     "graphql": "^16.2.0",
     "intersection-observer": "^0.12.0",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
